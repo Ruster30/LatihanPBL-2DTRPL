@@ -4,18 +4,18 @@ on:
   push:
     branches:
       - main
-    pull request:
+  pull request:
 
 jobs:
   lint:
     runs-on: windows-latest
 
     steps:
-      -name: Checkout Repository
+      - name: Checkout Repository
         uses: action/checkout@v4
 
-      -name: Install HTMLHint
+      - name: Install HTMLHint
         run: npm install -g htmlhint
 
-      -name: Periksa HTML
+      - name: Periksa HTML
         run: htmlhint "**/*.html"
