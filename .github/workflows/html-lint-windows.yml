@@ -11,11 +11,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout Repository
+      -name: Checkout Repository
         uses: action/checkout@v4
 
-      - name: Install HTMLHint
-      run: npm install -g htmlhint
+      -name: Install HTMLHint
+        run: npm install -g htmlhint
 
-      - name: Periksa HTML
-      run: htmlhint "**/*.html"
+      -name: Periksa HTML
+        run: htmlhint "**/*.html"
