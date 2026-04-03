@@ -1,4 +1,53 @@
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
 body {
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  color: #333;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Card / box */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hover efek */
+.button:hover {
+  background-color: #27ae60;
 }
